@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--headless",
+        "--isolated",
+        "--executablePath",
+        "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+        "--chromeArg=--no-sandbox",
+        "--chromeArg=--disable-dev-shm-usage",
+        "--no-performance-crux",
+        "--no-usage-statistics"
+      ],
+      "env": {}
+    }
+  }
+}
